@@ -1,0 +1,203 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    /*NEW*/
+    background: #f0f1f3;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*NEW */
+.main-container {
+    padding-left: 60px;
+    padding-right: 60px;
+    background: #f0f1f3;
+}
+
+.no-gutter {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.panel-heading, .panel-body {
+    background: white;
+}
+
+h2, h3 {
+    color: #0aa0a6;
+}
+
+.panel-heading, .panel-body {
+    box-shadow: 0px 3px 12px -1px rgba(0,0,0,0.75);
+    border-radius: 4px;
+}
+
+.panel-heading {
+    background: #f9f9f9;
+}
+
+.panel-body {
+    margin-top: 10px;
+}
+
+/*NEW2*/
+.styled-select select {
+    background: transparent;
+    border: none;
+    -webkit-appearance: none;
+}
+
+/*Стиль форм edit*/
+.form-edit-style input[type="text"], select, input[type="date"], .form-edit-style select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 25px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.form-edit-style input[type="checkbox"] {
+    height: 0px;
+}
+
+.form-edit-style .row {
+}
+
+.form-edit-style .col-md-12 {
+    margin-top: 10px;
+}
+
+.row-shadow {
+    border: 1px solid #ccc;
+    /*box-shadow: 0px 1px 5px -1px rgba(0,0,0,0.75);
+     border-radius: 4px; */
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 10px;
+}
+
+    .row-shadow div label:nth-child(1) {
+        max-width: 75px;
+        width: 100%;
+    }
+
+
+.width70 {
+    max-width: 70px;
+    width: 100%;
+}
+
+.max-width700 {
+    max-width: 700px;
+    width: 100%;
+}
+
+.max-width400 {
+    max-width: 400px;
+    width: 100%;
+}
+
+.max-width220 {
+    max-width: 220px;
+    width: 100%;
+}
+
+.max-width280 {
+    max-width: 280px;
+    width: 100%;
+}
+
+/*чекбоксы использовать классы checkbox-form checkbox-primary*/
+.checkbox-form input[type="checkbox"] + input[type="hidden"] + label {
+    display: inline-block;
+    position: relative;
+    margin-right: 7px;
+}
+
+    .checkbox-form input[type="checkbox"] + input[type="hidden"] + label::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        left: 0;
+        margin-left: -20px;
+        border: 1px solid #cccccc;
+        border-radius: 3px;
+        background-color: #fff;
+        -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+        -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+        transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    }
+
+    .checkbox-form input[type="checkbox"] + input[type="hidden"] + label::after {
+        display: inline-block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        left: 0;
+        top: 0;
+        margin-left: -20px;
+        padding-left: 3px;
+        padding-top: 1px;
+        font-size: 11px;
+        color: #555555;
+    }
+
+.checkbox-form input[type="checkbox"] + input[type="hidden"] {
+    opacity: 0;
+}
+
+.checkbox input[type="checkbox"]:focus + input[type="hidden"] + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.checkbox-form input[type="checkbox"]:checked + input[type="hidden"] + label::after {
+    font-family: 'FontAwesome';
+    content: "\f00c";
+}
+
+.checkbox-form input[type="checkbox"]:disabled + input[type="hidden"] + label {
+    opacity: 0.65;
+}
+
+    .checkbox-form input[type="checkbox"]:disabled + input[type="hidden"] + label::before {
+        background-color: #eeeeee;
+        cursor: not-allowed;
+    }
+
+.checkbox-form.checkbox-inline {
+    margin-top: 0;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + input[type="hidden"] + label::before {
+    background-color: #428bca;
+    border-color: #428bca;
+}
+
+.checkbox-primary input[type="checkbox"]:checked + input[type="hidden"] + label::after {
+    color: #fff;
+}
+
+
+/*USI*/
+.navbar-inverse {
+    background-color: #ffffff;
+    border-color: #9c9c9c;
+}
+
